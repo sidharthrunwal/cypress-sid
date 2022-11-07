@@ -4,13 +4,13 @@ import { useCallback, useEffect, useState } from 'react';
 import { getAuth, GoogleAuthProvider, onAuthStateChanged, signInWithPopup, signOut } from 'firebase/auth';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBERvghriZ2QFyxuFIBhqGRmUmqqOwiWSQ",
-    authDomain: "react-tutorial-b8a41.firebaseapp.com",
-    projectId: "react-tutorial-b8a41",
-    storageBucket: "react-tutorial-b8a41.appspot.com",
-    messagingSenderId: "805123204489",
-    appId: "1:805123204489:web:05d8dffaf2c77c6496ad58",
-    measurementId: "G-NQVZ0QCB4W"
+  apiKey: "AIzaSyBIio9qQIqm-3iGa8ZIVRbc2GyNIat9kZE",
+  authDomain: "cypress-tutorial.firebaseapp.com",
+  projectId: "cypress-tutorial",
+  storageBucket: "cypress-tutorial.appspot.com",
+  messagingSenderId: "682131399649",
+  appId: "1:682131399649:web:dea214d124ddddb44be8a0",
+  measurementId: "G-FBWJH9ZKZB"
 };
 
 // Initialize Firebase
