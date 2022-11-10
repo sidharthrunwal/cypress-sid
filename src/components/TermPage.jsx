@@ -33,6 +33,7 @@ const TermPage = ({courses, profile}) => {
     const [selected, setSelected] = useState([]);
     const [disabled, setDisabled] = useState([]);
     const [open, setOpen] = useState(false);
+    
 
     const openModal = () => setOpen(true);
     const closeModal = () => setOpen(false);
@@ -86,7 +87,8 @@ const TermPage = ({courses, profile}) => {
     };
 
     const filteredCourse = Object.entries(courses).filter(([id, course]) => course.term == selection);
-
+    // Object.entries(courses).map(([id, course]) => console.log(course));
+    // console.log(Object.entries(courses))
     return (
         <div>
             <TermSelector selection={selection} setSelection={setSelection} />

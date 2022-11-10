@@ -19,8 +19,10 @@ const CourseFormForUrl = ({courses}) => {
 };
 
 const Main = () => {
-  const [data, error] = useDbData(`/`);
+  // console.log("hey");
+  const [data, error] = useDbData(`/data`);
   const [profile, profileLoading, profileError] = useProfile();
+ 
 
   if (error) return <h1>Error loading course data: {error.toString()}</h1>;
   if (data === undefined) return <h1>Loading course data...</h1>;
